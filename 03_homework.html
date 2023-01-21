@@ -6,41 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="name, cv, document">
     <meta name="description" content="Моя биография">
+    <link rel="stylesheet" href="style.css">
     <title>About me</title>
 </head>
 <body>
-    <img src="https://sun9-59.userapi.com/impg/nPUd_5P_bQKTYxYoEkl9cGUkDpJxX70DcVjy7A/AnKLhyo7jfk.jpg?size=1280x1280&quality=96&sign=2dd8f90aba1d32ffce5066a4842cd09f&type=album" width="200">
+<div class="container">
 
-    <h1>Шапрунова Виктория</h1>
-   
-    <p>Я обучаюсь <strong> HTML курсам </strong> в онлайн школе <strong> Result School. </strong> </p>
+    <div class="info">
+            <img src="https://sun9-59.userapi.com/impg/nPUd_5P_bQKTYxYoEkl9cGUkDpJxX70DcVjy7A/AnKLhyo7jfk.jpg?size=1280x1280&quality=96&sign=2dd8f90aba1d32ffce5066a4842cd09f&type=album" class="avatar">
 
-    <p>Я люблю <em> играть в игры, заниматься спортом и учиться программированию. </em> </p>
+    <div class="info-text">
+        <h1>Шапрунова Виктория</h1>
+    
+        <p>Я обучаюсь <strong> HTML курсам </strong> в онлайн школе <strong> Result School. </strong> </p>
 
-    <h4>Список социальных сетей</h4>
+        <p>Я люблю <em> играть в игры, заниматься спортом и учиться программированию. </em> </p>
 
-    <a href="https://www.instagram.com" target="_blank"> Instagram </a>
-    |
-    <a href="https://telegram.org" target="_blank"> Telegram </a>
-    |
-    <a href="https://www.youtube.com" target="_blank"> YouTube </a>
+        <h4>Список социальных сетей:</h4>
 
-    <hr color="blue">
+        <a href="https://www.instagram.com" target="_blank"> Instagram </a>
+        |
+        <a href="https://telegram.org" target="_blank"> Telegram </a>
+        |
+        <a href="https://www.youtube.com" target="_blank"> YouTube </a>
+        </div>
+    </div>
 
-<h2>Мои хобби</h2>
 
-<ol>
-    <li>Рисование</li>
-    <li>Путешествие</li>
-    <li>Игры</li>
-    <li>Спорт</li>
-</ol>
+<div class="card bg-green">
+    <h2>Мои хобби</h2>
 
-<hr color="green">
+        <ol>
+        <li>Рисование</li>
+        <li>Путешествие</li>
+        <li>Игры</li>
+        <li>Спорт</li>
+        </ol>
+</div>
 
+<div class="card bg-red">
 <h2>Опыт работы</h2>
-
-<table>
+<table class="table">
     <thead>
         <tr>
         <th>Название</th>
@@ -71,32 +77,45 @@
         </tr>
     </tbody>
 </table>
+</div>
 
-<hr color="red">
+<div class="card bg-yellow">
+    <h2>Мои курсы</h2>
 
-<h2>Связаться со мной</h2>
+        <ul class="link-list">
+            <li>
+                <a href="https://kinobase.org/serial/126338-bumazhnyj-dom" target="_blank">Получение профессии Frontand</a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/cssref/css_colors.php">Все курсы</a>
+            </li>
+        </ul>
+</div>
 
-<form action="/">
-    <div>
+
+
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+
+    <div class="form-row">
+
+    <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Введите имя">
     </div>
 
-    <div>
+    <div" class="form-group">
         <label for="eamail">Ваш email:</label>
         <input type="email" id="email" placeholder="Введите email">
     </div>
+</div>
 
-    <div>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
         <textarea id="message" cols="20" rows="10" placeholder="Введите сообщение..."></textarea>
     </div>
-
-    <input type="submit" value="Отправить!">
-    <br>
-    <br>
-    <br>
+    <button class="btn">Отправить!</button>
 </form>
+</div>
 </body>
 </html>
